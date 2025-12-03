@@ -1,0 +1,128 @@
+{
+  "restaurant": "Chai & Kathi Roll Lounge, Indianapolis",
+  "menu": [
+    {
+      "category": "Featured / Popular Items",
+      "items": [
+        { "name": "Paneer Grilled Sandwich", "price": 9.89 },
+        { "name": "Chole Bhature", "price": 14.29 },
+        { "name": "Street Style Burger", "price": 8.79 },
+        { "name": "Aloo Tikki Chaat", "price": 9.89 },
+        { "name": "Bombay Pav Bhaji", "price": 10.99 },
+        { "name": "Veg Noodles", "price": 13.74 },
+        { "name": "Chicken Momos", "price": 10.99 }
+      ]
+    },
+    {
+      "category": "Kathi Rolls",
+      "items": [
+        { "name": "Aloo Masala Roll", "price": 9.34 },
+        { "name": "Paneer Tikka Roll", "price": 9.89 },
+        { "name": "Paneer Roll", "price": 9.34 },
+        { "name": "Chilli Paneer Roll", "price": 9.89 },
+        { "name": "Egg Roll", "price": 8.79 },
+        { "name": "Chicken Roll", "price": 9.34 },
+        { "name": "Chilli Chicken Roll", "price": 9.89 },
+        { "name": "Egg Chicken Roll", "price": 10.99 },
+        { "name": "Egg Burji Roll", "price": 9.34 },
+        { "name": "Chicken Tikka Roll", "price": 9.89 },
+        { "name": "Chicken 65 Roll", "price": 9.89 },
+        { "name": "Chowmin Roll", "price": 9.34 }
+      ]
+    },
+    {
+      "category": "Grilled Sandwiches",
+      "items": [
+        { "name": "Paneer Grilled Sandwich", "price": 9.89 },
+        { "name": "Spinach Corn Sandwich", "price": 9.89 },
+        { "name": "Chilli Paneer Sandwich", "price": 10.44 },
+        { "name": "Paneer Tikka Sandwich", "price": 10.44 },
+        { "name": "Chicken Grilled Sandwich", "price": 8.49 },
+        { "name": "Chilli Chicken Sandwich", "price": 10.44 },
+        { "name": "Tandoori Chicken Tikka Sandwich", "price": 8.99 },
+        { "name": "Egg Burji Sandwich", "price": 9.34 }
+      ]
+    },
+    {
+      "category": "Momos & Appetizers / Indo‑Chinese / Snacks",
+      "items": [
+        { "name": "Veggie Momos", "price": 8.49 },
+        { "name": "Chicken Momos", "price": 8.49 },
+        { "name": "Chilli Chicken Momos", "price": 9.99 },
+        { "name": "Tandoori Chicken Momos", "price": 9.99 },
+        { "name": "Tandoori Veg Momos", "price": 9.99 },
+        { "name": "Chilli Veg Momos", "price": 9.99 },
+        { "name": "Veg Spring Roll", "price": 9.99 },
+        { "name": "French Fries", "price": 3.99 },
+        { "name": "Chicken Nuggets (6 pc)", "price": 5.99 },
+        { "name": "Mozzarella Cheese Sticks", "price": 5.99 },
+        { "name": "Mac & Cheese", "price": 5.99 },
+        { "name": "Cheese Pizza", "price": 7.99 },
+        { "name": "Chicken Pizza", "price": 8.99 },
+        { "name": "Veg Mayo Sandwich", "price": 7.99 },
+        { "name": "Egg Grilled Sandwich", "price": 8.99 }
+      ]
+    },
+    {
+      "category": "Chaat / Street Snacks / Burgers / Indo Food",
+      "items": [
+        { "name": "Chole Bhature", "price": 9.99 },
+        { "name": "Dahi Bhalla", "price": 9.99 },
+        { "name": "Samosa Chaat", "price": 9.99 },
+        { "name": "Aloo Tikki Chaat", "price": 9.99 },
+        { "name": "Street Style Burger", "price": 7.99 },
+        { "name": "Aloo Tikki Burger", "price": 6.99 },
+        { "name": "Noodle Burger (without Aloo Tikki)", "price": 6.99 },
+        { "name": "Chaat Papadi", "price": 9.99 },
+        { "name": "Chicken Burger", "price": 8.99 },
+        { "name": "Bombay Pav Bhaji", "price": 7.99 },
+        { "name": "Chicken Hakka Noodles", "price": 11.49 },
+        { "name": "Chicken Schezwan Noodles", "price": 11.49 },
+        { "name": "Veg Noodles", "price": 10.49 },
+        { "name": "Veg Schezwan Noodles", "price": 10.49 },
+        { "name": "Veg Fried Rice", "price": 10.49 },
+        { "name": "Chicken Fried Rice", "price": 11.49 },
+        { "name": "Schezwan Fried Rice", "price": 10.49 },
+        { "name": "Schezwan Chicken Fried Rice", "price": 11.49 },
+        { "name": "Chicken Bun Garlic Rice", "price": 11.49 }
+      ]
+    },
+    {
+      "category": "Wraps / Sandwiches / Wrap Items",
+      "items": [
+        { "name": "Veggie Wrap", "price": 8.99 },
+        { "name": "Chicken Wrap", "price": 8.99 },
+        { "name": "Paneer Tikka Wrap", "price": 9.99 },
+        { "name": "Chicken Tikka Wrap", "price": 9.99 },
+        { "name": "Chilli Chicken Wrap", "price": 8.99 }
+      ]
+    },
+    {
+      "category": "Drinks & Beverages",
+      "items": [
+        { "name": "Masala Chai (Medium)", "price": 2.99 },
+        { "name": "Chai Tea (Hot/Cold)", "price": 3.49 },
+        { "name": "Black Coffee (Medium)", "price": 2.99 },
+        { "name": "Black Coffee (Large)", "price": 3.49 },
+        { "name": "Hot Chocolate (Medium)", "price": 3.99 },
+        { "name": "Hot Chocolate (Large)", "price": 4.49 },
+        { "name": "Doodh Patti", "price": 3.99 },
+        { "name": "Indian Hot Coffee", "price": 3.49 },
+        { "name": "Indian Cold Coffee", "price": 3.99 },
+        { "name": "Latte / Cappuccino / Mocha", "price": 4.06 },
+        { "name": "Chocolate Coffee", "price": 4.06 },
+        { "name": "Iced Latte", "price": 4.39 },
+        { "name": "Iced Cappuccino", "price": 4.39 },
+        { "name": "Iced Macchiato", "price": 3.84 },
+        { "name": "Iced Americano", "price": 3.84 },
+        { "name": "Iced Chai Latte", "price": 3.84 },
+        { "name": "Iced Mocha", "price": 3.84 },
+        { "name": "Cold Drink (Pepsi / Fanta / Coke / Sprite)", "price": 2.39 },
+        { "name": "Fresh Mint Lemonade", "price": 4.49 },
+        { "name": "Mango Lassi", "price": 4.99 },
+        { "name": "Bottled Water", "price": 1.49 }
+      ]
+    }
+  ]
+}
+
