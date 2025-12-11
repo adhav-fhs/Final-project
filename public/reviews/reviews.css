@@ -1,0 +1,277 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #0b1220;
+	color: #bd9d4b;
+}
+
+.navbar {
+	width: 100%;
+	background-color: #000;
+	padding: 20px;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+.nav-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-btn {
+	position: relative;
+	display: inline-block;
+	background-color: black;
+	color: #bd9d4b;
+	border: 1px solid #bd9d4b;
+	padding: 10px 20px;
+	text-decoration: none;
+	overflow: hidden;
+	border-radius: 5px;
+	transition: color 0.4s, background-color 0.4s;
+}
+
+.nav-btn::before {
+	content: "";
+	position: absolute;
+	top: -100%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #bd9d4b;
+	transition: top 0.4s;
+}
+
+.nav-btn:hover::before {
+	top: 0;
+}
+
+.nav-btn:hover {
+	color: black;
+}
+
+.nav-btn span {
+	position: relative;
+	z-index: 5;
+}
+
+.container {
+	max-width: 800px;
+	margin: 40px auto;
+	padding: 20px;
+}
+
+.review-form {
+	background-color: #0b1220;
+	border: 1px solid #bd9d4b;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+	background: black;
+	border: 1px solid #bd9d4b;
+	border-radius: 5px;
+	color: #bd9d4b;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.stars {
+	margin: 15px 0;
+	text-align: center;
+}
+
+.star {
+	font-size: 24px;
+	cursor: pointer;
+	transition: transform 0.25s ease, color 0.25s;
+	display: inline-block;
+	color: gray;
+	margin: 0 8px;
+}
+
+.star.scale1 {
+	transform: scale(1.9);
+	color: #bd9d4b;
+}
+.star.scale2 {
+	transform: scale(1.6);
+	color: #bd9d4b;
+}
+.star.scale3 {
+	transform: scale(1.35);
+	color: #bd9d4b;
+}
+.star.scale4 {
+	transform: scale(1.15);
+	color: #bd9d4b;
+}
+.star.scale5 {
+	transform: scale(1);
+	color: #bd9d4b;
+}
+
+.submit-btn {
+	position: relative;
+	display: inline-block;
+	background-color: black;
+	color: #bd9d4b;
+	border: 1px solid #bd9d4b;
+	padding: 10px 20px;
+	text-decoration: none;
+	overflow: hidden;
+	border-radius: 5px;
+	transition: color 0.4s, background-color 0.4s;
+}
+
+.submit-btn::before {
+	content: "";
+	position: absolute;
+	top: -100%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #bd9d4b;
+	transition: top 0.4s;
+}
+
+.submit-btn:hover::before {
+	top: 0;
+	z-index: 1;
+}
+
+.submit-btn:hover {
+	color: black;
+}
+
+.submit-btn span {
+	position: relative;
+	z-index: 5;
+}
+
+.stars {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	gap: 8px;
+}
+
+.stars input {
+	display: none;
+}
+
+.stars .star {
+	font-size: 24px;
+	color: gray;
+	cursor: pointer;
+	transition: transform 0.25s ease, color 0.25s;
+}
+
+.stars .star:hover,
+.stars .star:hover ~ .star {
+	color: #bd9d4b;
+}
+
+.stars .star:hover {
+	transform: scale(1.9);
+}
+
+.stars .star:hover ~ .star {
+	transform: scale(1.6);
+}
+
+.stars .star:hover ~ .star ~ .star {
+	transform: scale(1.35);
+}
+
+.stars .star:hover ~ .star ~ .star ~ .star {
+	transform: scale(1.15);
+}
+
+.stars .star:hover ~ .star ~ .star ~ .star ~ .star {
+	transform: scale(1);
+}
+
+.stars input:checked + .star,
+.stars input:checked + .star ~ .star {
+	color: #bd9d4b;
+}
+
+.stars input:checked + .star {
+	transform: scale(1.9);
+}
+
+.stars input:checked + .star ~ .star {
+	transform: scale(1.6);
+}
+
+.stars input:checked + .star ~ .star ~ .star {
+	transform: scale(1.35);
+}
+
+.stars input:checked + .star ~ .star ~ .star ~ .star {
+	transform: scale(1.15);
+}
+
+.stars input:checked + .star ~ .star ~ .star ~ .star ~ .star {
+	transform: scale(1);
+}
+
+.review-form input[type="email"] {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	background-color: black;
+	border: 1px solid #bd9d4b;
+	border-radius: 5px;
+	color: #bd9d4b;
+	margin: 12px 0;
+}
+
+.review-form input[type="email"]::placeholder {
+	color: #bd9d4b;
+}
+
+.review {
+	background-color: black;
+	border: 1px solid #bd9d4b;
+	border-radius: 5px;
+	padding: 12px;
+	margin-bottom: 12px;
+	color: #bd9d4b;
+	font-family: Arial, sans-serif;
+}
+
+.review-email {
+	font-weight: bold;
+	margin-bottom: 4px;
+	font-size: 14px;
+}
+
+.review-stars {
+	font-size: 20px;
+	margin-bottom: 4px;
+}
+
+.review-text {
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+.h2-review-text {
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 20px;
+}

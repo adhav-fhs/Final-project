@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport"/>
+		<title>Menu: Bites of India</title>
+		<link rel="stylesheet" href="menu.css" />
+	</head>
+	<body>
+		<div class="navbar">
+			<div class="brand">Menu: Bites of India</div>
+			<div class="cart-container">
+				<button
+					class="cart-btn"
+					onclick="window.location.href='/public/cart/cart.html'"
+				>
+					<img src="/images/shopping-cart.jpg" alt="Cart" class="cart-icon" />
+					<span class="cart-count">0</span>
+				</button>
+			</div>
+		</div>
+
+		<div class="menu-container">
+			<!-- Starting new category, category name 'Featured / Popular Items' -->
+			<h2 class="category-indicator">Featured / Popular Items</h2>
+			<div
+				class="menu-item"
+				data-name="Paneer Grilled Sandwich"
+				data-price="9.89"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Paneer Grilled Sandwich</div>
+					<div class="item-price">$9.89</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Paneer Grilled Sandwich Example Img"
+					/>
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chole Bhature" data-price="14.29">
+				<div class="item-btn-left">
+					<div class="item-name">Chole Bhature</div>
+					<div class="item-price">$14.29</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Chole Bhature Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Street Style Burger" data-price="8.79">
+				<div class="item-btn-left">
+					<div class="item-name">Street Style Burger</div>
+					<div class="item-price">$8.79</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Street Style Burger Example Img"
+					/>
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Aloo Tikki Chaat" data-price="9.89">
+				<div class="item-btn-left">
+					<div class="item-name">Aloo Tikki Chaat</div>
+					<div class="item-price">$9.89</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Aloo Tikki Chaat Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Bombay Pav Bhaji" data-price="10.99">
+				<div class="item-btn-left">
+					<div class="item-name">Bombay Pav Bhaji</div>
+					<div class="item-price">$10.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Bombay Pav Bhaji Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Veg Noodles" data-price="13.74">
+				<div class="item-btn-left">
+					<div class="item-name">Veg Noodles</div>
+					<div class="item-price">$13.74</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Veg Noodles Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chicken Momos" data-price="10.99">
+				<div class="item-btn-left">
+					<div class="item-name">Chicken Momos</div>
+					<div class="item-price">$10.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Chicken Momos Example Img" />
+				</div>
+			</div>
+
+			<!-- Starting new category, category name 'Kathi Rolls' -->
+			<br />
+			<h2 class="category-indicator">Kathi Rolls</h2>
+			<br />
+			<div class="menu-item" data-name="Aloo Masala Roll" data-price="9.34">
+				<div class="item-btn-left">
+					<div class="item-name">Aloo Masala Roll</div>
+					<div class="item-price">$9.34</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Aloo Masala Roll Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Paneer Tikka Roll" data-price="9.89">
+				<div class="item-btn-left">
+					<div class="item-name">Paneer Tikka Roll</div>
+					<div class="item-price">$9.89</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Paneer Tikka Roll Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Paneer Roll" data-price="9.34">
+				<div class="item-btn-left">
+					<div class="item-name">Paneer Roll</div>
+					<div class="item-price">$9.34</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Paneer Roll Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chilli Paneer Roll" data-price="9.89">
+				<div class="item-btn-left">
+					<div class="item-name">Chilli Paneer Roll</div>
+					<div class="item-price">$9.89</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Chilli Paneer Roll Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Egg Roll" data-price="8.79">
+				<div class="item-btn-left">
+					<div class="item-name">Egg Roll</div>
+					<div class="item-price">$8.79</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Egg Roll Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chicken Roll" data-price="9.34">
+				<div class="item-btn-left">
+					<div class="item-name">Chicken Roll</div>
+					<div class="item-price">$9.34</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Chicken Roll Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chilli Chicken Roll" data-price="9.89">
+				<div class="item-btn-left">
+					<div class="item-name">Chilli Chicken Roll</div>
+					<div class="item-price">$9.89</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Chilli Chicken Roll Example Img"
+					/>
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Egg Chicken Roll" data-price="10.99">
+				<div class="item-btn-left">
+					<div class="item-name">Egg Chicken Roll</div>
+					<div class="item-price">$10.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Egg Chicken Roll Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Egg Burji Roll" data-price="9.34">
+				<div class="item-btn-left">
+					<div class="item-name">Egg Burji Roll</div>
+					<div class="item-price">$9.34</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Egg Burji Roll Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chicken Tikka Roll" data-price="9.89">
+				<div class="item-btn-left">
+					<div class="item-name">Chicken Tikka Roll</div>
+					<div class="item-price">$9.89</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Chicken Tikka Roll Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chicken 65 Roll" data-price="9.89">
+				<div class="item-btn-left">
+					<div class="item-name">Chicken 65 Roll</div>
+					<div class="item-price">$9.89</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Chicken 65 Roll Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chowmin Roll" data-price="9.34">
+				<div class="item-btn-left">
+					<div class="item-name">Chowmin Roll</div>
+					<div class="item-price">$9.34</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Chowmin Roll Example Img" />
+				</div>
+			</div>
+
+			<!-- Starting new category, category name 'Grilled Sandwiches' -->
+			<br />
+			<h2 class="category-indicator">Grilled Sandwiches</h2>
+			<br />
+			<div
+				class="menu-item"
+				data-name="Paneer Grilled Sandwich"
+				data-price="9.89"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Paneer Grilled Sandwich</div>
+					<div class="item-price">$9.89</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Paneer Grilled Sandwich Example Img"
+					/>
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Spinach Corn Sandwich"
+				data-price="9.89"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Spinach Corn Sandwich</div>
+					<div class="item-price">$9.89</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Spinach Corn Sandwich Example Img"
+					/>
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Chilli Paneer Sandwich"
+				data-price="10.44"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Chilli Paneer Sandwich</div>
+					<div class="item-price">$10.44</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Chilli Paneer Sandwich Example Img"
+					/>
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Paneer Tikka Sandwich"
+				data-price="10.44"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Paneer Tikka Sandwich</div>
+					<div class="item-price">$10.44</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Paneer Tikka Sandwich Example Img"
+					/>
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Chicken Grilled Sandwich"
+				data-price="8.49"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Chicken Grilled Sandwich</div>
+					<div class="item-price">$8.49</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Chicken Grilled Sandwich Example Img"
+					/>
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Chilli Chicken Sandwich"
+				data-price="10.44"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Chilli Chicken Sandwich</div>
+					<div class="item-price">$10.44</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Chilli Chicken Sandwich Example Img"
+					/>
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Tandoori Chicken Tikka Sandwich"
+				data-price="8.99"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Tandoori Chicken Tikka Sandwich</div>
+					<div class="item-price">$8.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Tandoori Chicken Tikka Sandwich Example Img"
+					/>
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Egg Burji Sandwich" data-price="9.34">
+				<div class="item-btn-left">
+					<div class="item-name">Egg Burji Sandwich</div>
+					<div class="item-price">$9.34</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Egg Burji Sandwich Example Img" />
+				</div>
+			</div>
+
+			<!-- Starting new category, category name 'Momos & Appetizers / Indo‑Chinese / Snacks' -->
+			<br />
+			<h2 class="category-indicator">
+				Momos & Appetizers / Indo‑Chinese / Snacks
+			</h2>
+			<br />
+			<div class="menu-item" data-name="Veggie Momos" data-price="8.49">
+				<div class="item-btn-left">
+					<div class="item-name">Veggie Momos</div>
+					<div class="item-price">$8.49</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Veggie Momos Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chicken Momos" data-price="8.49">
+				<div class="item-btn-left">
+					<div class="item-name">Chicken Momos</div>
+					<div class="item-price">$8.49</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Chicken Momos Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chilli Chicken Momos" data-price="9.99">
+				<div class="item-btn-left">
+					<div class="item-name">Chilli Chicken Momos</div>
+					<div class="item-price">$9.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Chilli Chicken Momos Example Img"
+					/>
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Tandoori Chicken Momos"
+				data-price="9.99"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Tandoori Chicken Momos</div>
+					<div class="item-price">$9.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Tandoori Chicken Momos Example Img"
+					/>
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Tandoori Veg Momos" data-price="9.99">
+				<div class="item-btn-left">
+					<div class="item-name">Tandoori Veg Momos</div>
+					<div class="item-price">$9.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Tandoori Veg Momos Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chilli Veg Momos" data-price="9.99">
+				<div class="item-btn-left">
+					<div class="item-name">Chilli Veg Momos</div>
+					<div class="item-price">$9.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Chilli Veg Momos Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Veg Spring Roll" data-price="9.99">
+				<div class="item-btn-left">
+					<div class="item-name">Veg Spring Roll</div>
+					<div class="item-price">$9.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Veg Spring Roll Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="French Fries" data-price="3.99">
+				<div class="item-btn-left">
+					<div class="item-name">French Fries</div>
+					<div class="item-price">$3.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="French Fries Example Img" />
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Chicken Nuggets (6 pc)"
+				data-price="5.99"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Chicken Nuggets (6 pc)</div>
+					<div class="item-price">$5.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Chicken Nuggets (6 pc) Example Img"
+					/>
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Mozzarella Cheese Sticks"
+				data-price="5.99"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Mozzarella Cheese Sticks</div>
+					<div class="item-price">$5.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Mozzarella Cheese Sticks Example Img"
+					/>
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Mac & Cheese" data-price="5.99">
+				<div class="item-btn-left">
+					<div class="item-name">Mac & Cheese</div>
+					<div class="item-price">$5.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Mac & Cheese Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Cheese Pizza" data-price="7.99">
+				<div class="item-btn-left">
+					<div class="item-name">Cheese Pizza</div>
+					<div class="item-price">$7.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Cheese Pizza Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chicken Pizza" data-price="8.99">
+				<div class="item-btn-left">
+					<div class="item-name">Chicken Pizza</div>
+					<div class="item-price">$8.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Chicken Pizza Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Veg Mayo Sandwich" data-price="7.99">
+				<div class="item-btn-left">
+					<div class="item-name">Veg Mayo Sandwich</div>
+					<div class="item-price">$7.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Veg Mayo Sandwich Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Egg Grilled Sandwich" data-price="8.99">
+				<div class="item-btn-left">
+					<div class="item-name">Egg Grilled Sandwich</div>
+					<div class="item-price">$8.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Egg Grilled Sandwich Example Img"
+					/>
+				</div>
+			</div>
+
+			<!-- Starting new category, category name 'Chaat / Street Snacks / Burgers / Indo Food' -->
+			<br />
+			<h2 class="category-indicator">
+				Chaat / Street Snacks / Burgers / Indo Food
+			</h2>
+			<br />
+			<div class="menu-item" data-name="Chole Bhature" data-price="9.99">
+				<div class="item-btn-left">
+					<div class="item-name">Chole Bhature</div>
+					<div class="item-price">$9.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Chole Bhature Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Dahi Bhalla" data-price="9.99">
+				<div class="item-btn-left">
+					<div class="item-name">Dahi Bhalla</div>
+					<div class="item-price">$9.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Dahi Bhalla Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Samosa Chaat" data-price="9.99">
+				<div class="item-btn-left">
+					<div class="item-name">Samosa Chaat</div>
+					<div class="item-price">$9.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Samosa Chaat Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Aloo Tikki Chaat" data-price="9.99">
+				<div class="item-btn-left">
+					<div class="item-name">Aloo Tikki Chaat</div>
+					<div class="item-price">$9.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Aloo Tikki Chaat Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Street Style Burger" data-price="7.99">
+				<div class="item-btn-left">
+					<div class="item-name">Street Style Burger</div>
+					<div class="item-price">$7.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Street Style Burger Example Img"
+					/>
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Aloo Tikki Burger" data-price="6.99">
+				<div class="item-btn-left">
+					<div class="item-name">Aloo Tikki Burger</div>
+					<div class="item-price">$6.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Aloo Tikki Burger Example Img" />
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Noodle Burger (without Aloo Tikki)"
+				data-price="6.99"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Noodle Burger (without Aloo Tikki)</div>
+					<div class="item-price">$6.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Noodle Burger (without Aloo Tikki) Example Img"
+					/>
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chaat Papadi" data-price="9.99">
+				<div class="item-btn-left">
+					<div class="item-name">Chaat Papadi</div>
+					<div class="item-price">$9.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Chaat Papadi Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chicken Burger" data-price="8.99">
+				<div class="item-btn-left">
+					<div class="item-name">Chicken Burger</div>
+					<div class="item-price">$8.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Chicken Burger Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Bombay Pav Bhaji" data-price="7.99">
+				<div class="item-btn-left">
+					<div class="item-name">Bombay Pav Bhaji</div>
+					<div class="item-price">$7.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Bombay Pav Bhaji Example Img" />
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Chicken Hakka Noodles"
+				data-price="11.49"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Chicken Hakka Noodles</div>
+					<div class="item-price">$11.49</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Chicken Hakka Noodles Example Img"
+					/>
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Chicken Schezwan Noodles"
+				data-price="11.49"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Chicken Schezwan Noodles</div>
+					<div class="item-price">$11.49</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Chicken Schezwan Noodles Example Img"
+					/>
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Veg Noodles" data-price="10.49">
+				<div class="item-btn-left">
+					<div class="item-name">Veg Noodles</div>
+					<div class="item-price">$10.49</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Veg Noodles Example Img" />
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Veg Schezwan Noodles"
+				data-price="10.49"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Veg Schezwan Noodles</div>
+					<div class="item-price">$10.49</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Veg Schezwan Noodles Example Img"
+					/>
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Veg Fried Rice" data-price="10.49">
+				<div class="item-btn-left">
+					<div class="item-name">Veg Fried Rice</div>
+					<div class="item-price">$10.49</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Veg Fried Rice Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chicken Fried Rice" data-price="11.49">
+				<div class="item-btn-left">
+					<div class="item-name">Chicken Fried Rice</div>
+					<div class="item-price">$11.49</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Chicken Fried Rice Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Schezwan Fried Rice" data-price="10.49">
+				<div class="item-btn-left">
+					<div class="item-name">Schezwan Fried Rice</div>
+					<div class="item-price">$10.49</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Schezwan Fried Rice Example Img"
+					/>
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Schezwan Chicken Fried Rice"
+				data-price="11.49"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Schezwan Chicken Fried Rice</div>
+					<div class="item-price">$11.49</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Schezwan Chicken Fried Rice Example Img"
+					/>
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Chicken Bun Garlic Rice"
+				data-price="11.49"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Chicken Bun Garlic Rice</div>
+					<div class="item-price">$11.49</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Chicken Bun Garlic Rice Example Img"
+					/>
+				</div>
+			</div>
+			<!-- Starting new category, category name 'Wraps / Sandwiches / Wrap Items' -->
+			<br />
+			<h2 class="category-indicator">Wraps / Sandwiches / Wrap Items</h2>
+			<br />
+			<div class="menu-item" data-name="Veggie Wrap" data-price="8.99">
+				<div class="item-btn-left">
+					<div class="item-name">Veggie Wrap</div>
+					<div class="item-price">$8.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Veggie Wrap Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chicken Wrap" data-price="8.99">
+				<div class="item-btn-left">
+					<div class="item-name">Chicken Wrap</div>
+					<div class="item-price">$8.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Chicken Wrap Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Paneer Tikka Wrap" data-price="9.99">
+				<div class="item-btn-left">
+					<div class="item-name">Paneer Tikka Wrap</div>
+					<div class="item-price">$9.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Paneer Tikka Wrap Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chicken Tikka Wrap" data-price="9.99">
+				<div class="item-btn-left">
+					<div class="item-name">Chicken Tikka Wrap</div>
+					<div class="item-price">$9.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Chicken Tikka Wrap Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chilli Chicken Wrap" data-price="8.99">
+				<div class="item-btn-left">
+					<div class="item-name">Chilli Chicken Wrap</div>
+					<div class="item-price">$8.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Chilli Chicken Wrap Example Img"
+					/>
+				</div>
+			</div>
+			<!-- Starting new category, category name 'Drinks & Beverages' -->
+			<br />
+			<h2 class="category-indicator">Drinks & Beverages</h2>
+			<br />
+			<div class="menu-item" data-name="Masala Chai (Medium)" data-price="2.99">
+				<div class="item-btn-left">
+					<div class="item-name">Masala Chai (Medium)</div>
+					<div class="item-price">$2.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Masala Chai (Medium) Example Img"
+					/>
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chai Tea (Hot/Cold)" data-price="3.49">
+				<div class="item-btn-left">
+					<div class="item-name">Chai Tea (Hot/Cold)</div>
+					<div class="item-price">$3.49</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Chai Tea (Hot/Cold) Example Img"
+					/>
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Black Coffee (Medium)"
+				data-price="2.99"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Black Coffee (Medium)</div>
+					<div class="item-price">$2.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Black Coffee (Medium) Example Img"
+					/>
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Black Coffee (Large)" data-price="3.49">
+				<div class="item-btn-left">
+					<div class="item-name">Black Coffee (Large)</div>
+					<div class="item-price">$3.49</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Black Coffee (Large) Example Img"
+					/>
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Hot Chocolate (Medium)"
+				data-price="3.99"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Hot Chocolate (Medium)</div>
+					<div class="item-price">$3.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Hot Chocolate (Medium) Example Img"
+					/>
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Hot Chocolate (Large)"
+				data-price="4.49"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Hot Chocolate (Large)</div>
+					<div class="item-price">$4.49</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Hot Chocolate (Large) Example Img"
+					/>
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Doodh Patti" data-price="3.99">
+				<div class="item-btn-left">
+					<div class="item-name">Doodh Patti</div>
+					<div class="item-price">$3.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Doodh Patti Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Indian Hot Coffee" data-price="3.49">
+				<div class="item-btn-left">
+					<div class="item-name">Indian Hot Coffee</div>
+					<div class="item-price">$3.49</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Indian Hot Coffee Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Indian Cold Coffee" data-price="3.99">
+				<div class="item-btn-left">
+					<div class="item-name">Indian Cold Coffee</div>
+					<div class="item-price">$3.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Indian Cold Coffee Example Img" />
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Latte / Cappuccino / Mocha"
+				data-price="4.06"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">Latte / Cappuccino / Mocha</div>
+					<div class="item-price">$4.06</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Latte / Cappuccino / Mocha Example Img"
+					/>
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Chocolate Coffee" data-price="4.06">
+				<div class="item-btn-left">
+					<div class="item-name">Chocolate Coffee</div>
+					<div class="item-price">$4.06</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Chocolate Coffee Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Iced Latte" data-price="4.39">
+				<div class="item-btn-left">
+					<div class="item-name">Iced Latte</div>
+					<div class="item-price">$4.39</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Iced Latte Example Img" />
+				</div>
+			</div>
+			<div class="menu-item" data-name="Iced Cappuccino" data-price="4.39">
+				<div class="item-btn-left">
+					<div class="item-name">Iced Cappuccino</div>
+					<div class="item-price">$4.39</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Iced Cappuccino Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Iced Macchiato" data-price="3.84">
+				<div class="item-btn-left">
+					<div class="item-name">Iced Macchiato</div>
+					<div class="item-price">$3.84</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Iced Macchiato Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Iced Americano" data-price="3.84">
+				<div class="item-btn-left">
+					<div class="item-name">Iced Americano</div>
+					<div class="item-price">$3.84</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Iced Americano Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Iced Chai Latte" data-price="3.84">
+				<div class="item-btn-left">
+					<div class="item-name">Iced Chai Latte</div>
+					<div class="item-price">$3.84</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Iced Chai Latte Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Iced Mocha" data-price="3.84">
+				<div class="item-btn-left">
+					<div class="item-name">Iced Mocha</div>
+					<div class="item-price">$3.84</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Iced Mocha Example Img" />
+				</div>
+			</div>
+
+			<div
+				class="menu-item"
+				data-name="Cold Drink (Pepsi / Fanta / Coke / Sprite)"
+				data-price="2.39"
+			>
+				<div class="item-btn-left">
+					<div class="item-name">
+						Cold Drink (Pepsi / Fanta / Coke / Sprite)
+					</div>
+					<div class="item-price">$2.39</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Cold Drink (Pepsi / Fanta / Coke / Sprite) Example Img"
+					/>
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Fresh Mint Lemonade" data-price="4.49">
+				<div class="item-btn-left">
+					<div class="item-name">Fresh Mint Lemonade</div>
+					<div class="item-price">$4.49</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img
+						src="/images/chaat1.jpeg"
+						alt="Fresh Mint Lemonade Example Img"
+					/>
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Mango Lassi" data-price="4.99">
+				<div class="item-btn-left">
+					<div class="item-name">Mango Lassi</div>
+					<div class="item-price">$4.99</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Mango Lassi Example Img" />
+				</div>
+			</div>
+
+			<div class="menu-item" data-name="Bottled Water" data-price="1.49">
+				<div class="item-btn-left">
+					<div class="item-name">Bottled Water</div>
+					<div class="item-price">$1.49</div>
+					<div class="qnty-controls">
+						<button class="minus-btn">-</button>
+						<button class="qnty-display">1</button>
+						<button class="plus-btn">+</button>
+					</div>
+					<button class="del-btn">🗑️</button>
+				</div>
+				<div class="ex-img">
+					<img src="/images/chaat1.jpeg" alt="Bottled Water Example Img" />
+				</div>
+			</div>
+		</div>
+
+		<script src="menu.js" defer></script>
+	</body>
+</html>
