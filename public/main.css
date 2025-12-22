@@ -359,10 +359,11 @@ body {
 }
 
 .reviews-desc {
-	font-size: 18px;
+	font-size: 20px;
 	max-width: 800px;
 	margin-bottom: 30px;
 	background-color: rgba(22, 22, 22, 0.8);
 	color: rgb(189, 157, 75, 0.6);
 	line-height: 1.8;
+	padding-bottom: 15px;
 }
