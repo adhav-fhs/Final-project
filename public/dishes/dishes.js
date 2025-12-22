@@ -11,20 +11,13 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
-const auth = firebase.auth();
 
-// ---------- ANONYMOUS AUTHENTICATION ----------
-let userId;
-
-auth.signInAnonymously()
-  .then((userCredential) => {
-    userId = userCredential.user.uid;
-    console.log("Signed in anonymously with UID:", userId);
-    initApp();
-  })
-  .catch((error) => {
-    console.error("Auth error:", error);
-  });
+// ---------- USER ID (ONE RATING PER USER) ----------
+let userId = localStorage.getItem("bitesUserId");
+if (!userId) {
+  userId = "user_" + Math.random().toString(36).slice(2);
+  localStorage.setItem("bitesUserId", userId);
+}
 
 // ---------- DOM ----------
 const dishList = document.getElementById("dishList");
@@ -94,7 +87,6 @@ function renderDish(doc) {
   card.querySelectorAll("input[type='radio']").forEach((input) => {
     input.addEventListener("change", async () => {
       const value = Number(input.value);
-
       try {
         await db.collection("recipes").doc(doc.id).update({
           [`ratings.${userId}`]: value
@@ -109,32 +101,30 @@ function renderDish(doc) {
 }
 
 // ---------- REAL-TIME LISTENER ----------
-function initApp() {
-  db.collection("recipes")
-    .orderBy(firebase.firestore.FieldPath.documentId())
-    .onSnapshot((snapshot) => {
-      dishList.innerHTML = "";
-      snapshot.forEach(renderDish);
+db.collection("recipes")
+  .orderBy(firebase.firestore.FieldPath.documentId())
+  .onSnapshot((snapshot) => {
+    dishList.innerHTML = "";
+    snapshot.forEach(renderDish);
+  });
+
+// ---------- ADD DISH ----------
+addDishBtn.addEventListener("click", async () => {
+  const name = dishNameInput.value.trim();
+  const desc = dishDescInput.value.trim();
+
+  if (!name || !desc) return;
+
+  try {
+    await db.collection("recipes").add({
+      "recipe-name": name,
+      "recipe-description": desc,
+      ratings: {}
     });
 
-  // ---------- ADD DISH ----------
-  addDishBtn.addEventListener("click", async () => {
-    const name = dishNameInput.value.trim();
-    const desc = dishDescInput.value.trim();
-
-    if (!name || !desc) return;
-
-    try {
-      await db.collection("recipes").add({
-        "recipe-name": name,
-        "recipe-description": desc,
-        ratings: {}
-      });
-
-      dishNameInput.value = "";
-      dishDescInput.value = "";
-    } catch (err) {
-      console.error("Error adding dish:", err);
-    }
-  });
-}
+    dishNameInput.value = "";
+    dishDescInput.value = "";
+  } catch (err) {
+    console.error("Error adding dish:", err);
+  }
+});
