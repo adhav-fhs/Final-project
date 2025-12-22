@@ -321,30 +321,39 @@ body {
 }
 
 .home-review-card {
-  margin-top: 20px;
-  padding: 14px;
+  background-color: #111c30;
   border: 1px solid #d4af37;
   border-radius: 10px;
-  background-color: #111c30;
-  max-width: 420px;
+  padding: 20px;
+  margin-top: 20px;
+  width: 80%; 
+  max-height: 250px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   cursor: pointer;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .home-review-email {
-  font-size: 14px;
-  color: #f5e6c8;
   font-weight: bold;
+  font-size: 16px;
   margin-bottom: 6px;
+  color: #f5e6c8;
+  text-align: left;
 }
 
 .home-review-text {
-  font-size: 15px;
+  font-size: 14px;
   color: #d6c28f;
-  line-height: 1.4;
-  margin-bottom: 10px;
+  text-align: left;
+  margin-bottom: 8px;
+  line-height: 1.3em;
 }
 
 .home-review-stars {
-  font-size: 18px;
+  font-size: 16px;
   color: #d4af37;
+  text-align: left;
 }
