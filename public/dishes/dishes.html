@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dishes: Bites of India</title>
+  <base href="/Final-project/">
+  <link rel="stylesheet" href="dishes.css" />
+</head>
+<body>
+
+  <div class="navigation-bar">
+    <div class="navbar-inner">
+      <div class="restaurant-name">Bites of India</div>
+      <div class="restaurant-motto">Community Dishes</div>
+    </div>
+
+    <button class="navbtn"><a href="public/index.html">Home</a></button>
+    <button class="navbtn"><a href="menu/menu.html">Menu</a></button>
+    <button class="navbtn"><a href="reviews/reviews.html">Reviews</a></button>
+  </div>
+
+  <main class="dishes-container">
+
+    <h1 class="page-title">Suggest a Dish</h1>
+
+    <div class="dish-form">
+      <input type="text" id="dishName" placeholder="Dish name" />
+      <textarea id="dishDesc" placeholder="Describe the dish"></textarea>
+      <button class="addDishBtn"><span>Add Dish</span></button>
+    </div>
+
+    <h2 class="section-title">Community Favorites</h2>
+
+    <div id="dishList" class="dish-list"></div>
+
+  </main>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+  <script defer src="dishes/dishes.js"></script>
+</body>
+</html>

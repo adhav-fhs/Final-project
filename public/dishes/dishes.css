@@ -1,0 +1,266 @@
+
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  background-color: #0c1626;
+  color: #f5e6c8;
+}
+
+.navigation-bar {
+  background-color: #081120;
+  padding: 30px 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-inner {
+  flex-grow: 1;
+}
+
+.restaurant-name {
+  font-size: 28px;
+  color: #f5e6c8;
+}
+
+.restaurant-motto {
+  font-size: 15px;
+  color: #d6c28f;
+}
+
+.navbtn {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  border: 1px solid #d4af37;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.navbtn a {
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  color: #d4af37;
+  font-weight: bold;
+}
+
+.navbtn::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d4af37;
+  transition: top 0.35s ease;
+}
+
+.navbtn:hover::before {
+  top: 0;
+}
+
+.navbtn:hover a {
+  color: #000;
+}
+
+.navbtn.active {
+  background-color: #d4af37;
+}
+
+.navbtn.active a {
+  color: #000;
+}
+
+.dishes-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 36px;
+  color: #f5e6c8;
+}
+
+.section-title {
+  margin-top: 50px;
+  font-size: 26px;
+  color: #d6c28f;
+}
+
+.dish-form {
+  background-color: #111c30;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid #d4af37;
+}
+
+.dish-form input,
+.dish-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #d4af37;
+  background-color: #081120;
+  color: #f5e6c8;
+  font-family: inherit;
+}
+
+.addDishBtn {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  color: #d4af37;
+  padding: 12px 20px;
+  border: 1px solid #d4af37;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.addDishBtn::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d4af37;
+  transition: top 0.35s ease;
+}
+
+.addDishBtn:hover::before {
+  top: 0;
+}
+
+.addDishBtn:hover {
+  color: #000;
+}
+
+
+.addDishBtn span {
+  position: relative;
+  z-index: 2;
+}
+
+.dish-list {
+  margin-top: 20px;
+}
+
+.dish-card {
+  background-color: #111c30;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d4af37;
+}
+
+.dish-info h3 {
+  margin: 0;
+  color: #f5e6c8;
+}
+
+.dish-info p {
+  margin: 6px 0;
+  color: #d6c28f;
+}
+
+/* ---------- VOTE BUTTON (SLIDE EFFECT) ---------- */
+.vote-btn {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.vote-btn::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d4af37;
+  transition: top 0.35s ease;
+}
+
+.vote-btn:hover::before {
+  top: 0;
+}
+
+.vote-btn:hover {
+  color: #000;
+}
+
+.vote-btn,
+.vote-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-start;
+	gap: 8px;
+}
+
+.stars input {
+	display: none;
+}
+
+.stars .star {
+	font-size: 24px;
+	color: gray;
+	cursor: pointer;
+	transition: transform 0.25s ease, color 0.25s;
+}
+
+.stars .star:hover,
+.stars .star:hover ~ .star {
+	color: #d4af37;
+}
+
+.stars .star:hover {
+	transform: scale(1.9);
+}
+
+.stars .star:hover ~ .star {
+	transform: scale(1.6);
+}
+
+.stars .star:hover ~ .star ~ .star {
+	transform: scale(1.35);
+}
+
+.stars .star:hover ~ .star ~ .star ~ .star {
+	transform: scale(1.15);
+}
+
+.stars .star:hover ~ .star ~ .star ~ .star ~ .star {
+	transform: scale(1);
+}
+
+.stars input:checked + .star,
+.stars input:checked + .star ~ .star {
+	color: #d4af37;
+}
+
+.rating-summary {
+	margin-left: 16px;
+	font-size: 16px;
+	color: #d6c28f;
+}
