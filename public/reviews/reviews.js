@@ -96,39 +96,54 @@ document.addEventListener("DOMContentLoaded", () => {
   // ================================
   // Load Reviews in real-time
   // ================================
-  function loadReviews() {
-    const list = document.getElementById("reviewsList");
+function loadReviews() {
+  const list = document.getElementById("reviewsList");
+  const totalReviewsEl = document.getElementById("totalReviews");
+  const averageRatingEl = document.getElementById("averageRating");
 
-    firestore.collection("reviews")
-      .orderBy("createdAt", "desc")
-      .onSnapshot(snapshot => {
-        list.innerHTML = "";
-        snapshot.forEach(doc => {
-          const r = doc.data();
+  firestore.collection("reviews")
+    .orderBy("createdAt", "desc")
+    .onSnapshot(snapshot => {
+      list.innerHTML = "";
 
-          const div = document.createElement("div");
-          div.classList.add("review");
+      let total = 0;
+      let sum = 0;
 
-          const emailP = document.createElement("p");
-          emailP.classList.add("review-email");
-          emailP.textContent = r.email;
+      snapshot.forEach(doc => {
+        const r = doc.data();
+        total++;
+        sum += r.rating;
 
-          const starsDiv = document.createElement("div");
-          starsDiv.classList.add("review-stars");
-          starsDiv.textContent = "★".repeat(r.rating) + "☆".repeat(5 - r.rating);
+        const div = document.createElement("div");
+        div.classList.add("review");
 
-          const text = document.createElement("p");
-          text.classList.add("review-text");
-          text.textContent = r.comments;
+        const emailP = document.createElement("p");
+        emailP.classList.add("review-email");
+        emailP.textContent = r.email;
 
-          div.appendChild(emailP);
-          div.appendChild(starsDiv);
-          div.appendChild(text);
+        const starsDiv = document.createElement("div");
+        starsDiv.classList.add("review-stars");
+        starsDiv.textContent =
+          "★".repeat(r.rating) + "☆".repeat(5 - r.rating);
 
-          list.appendChild(div);
-        });
+        const text = document.createElement("p");
+        text.classList.add("review-text");
+        text.textContent = r.comments;
+
+        div.appendChild(emailP);
+        div.appendChild(starsDiv);
+        div.appendChild(text);
+
+        list.appendChild(div);
       });
-  }
+
+      // Update summary
+      totalReviewsEl.textContent = total;
+      averageRatingEl.textContent =
+        total === 0 ? "0.0" : (sum / total).toFixed(1);
+    });
+}
+
 
   loadReviews();
 });

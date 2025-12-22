@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bites of India - Reviews</title>
-  <base href="/Final-project/">
-  <link rel="stylesheet" href="reviews/reviews.css" />
-</head>
-<body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-btn"><span>Home</span></a>
-      <a href="dishes/dishes.html" class="nav-btn"><span>Dishes</span></a>
-    </div>
-  </nav>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bites of India - Reviews</title>
+		<base href="/Final-project/" />
+		<link rel="stylesheet" href="reviews/reviews.css" />
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="nav-container">
+				<a href="index.html" class="nav-btn"><span>Home</span></a>
+				<a href="dishes/dishes.html" class="nav-btn"><span>Dishes</span></a>
+			</div>
+		</nav>
 
-  <div class="container">
-    <h1>Leave a Review</h1>
+		<div class="container">
+			<h1>Leave a Review</h1>
 
-    <div class="review-form">
-      <textarea id="reviewText" placeholder="Write your review here..."></textarea>
-      <input type="email" id="reviewEmail" placeholder="Enter your email" />
-      <div class="stars">
-        <input type="radio" name="rating" id="star5" data-value="5">
-        <label for="star5" class="star">&#9733;</label>
-        <input type="radio" name="rating" id="star4" data-value="4">
-        <label for="star4" class="star">&#9733;</label>
-        <input type="radio" name="rating" id="star3" data-value="3">
-        <label for="star3" class="star">&#9733;</label>
-        <input type="radio" name="rating" id="star2" data-value="2">
-        <label for="star2" class="star">&#9733;</label>
-        <input type="radio" name="rating" id="star1" data-value="1">
-        <label for="star1" class="star">&#9733;</label>
-      </div>
-      <button type="submit" id="submitReview" class="submit-btn"><span>Submit</span></button>
-    </div>
+			<div class="review-form">
+				<textarea
+					id="reviewText"
+					placeholder="Write your review here..."
+				></textarea>
+				<input type="email" id="reviewEmail" placeholder="Enter your email" />
+				<div class="stars">
+					<input type="radio" name="rating" id="star5" data-value="5" />
+					<label for="star5" class="star">&#9733;</label>
+					<input type="radio" name="rating" id="star4" data-value="4" />
+					<label for="star4" class="star">&#9733;</label>
+					<input type="radio" name="rating" id="star3" data-value="3" />
+					<label for="star3" class="star">&#9733;</label>
+					<input type="radio" name="rating" id="star2" data-value="2" />
+					<label for="star2" class="star">&#9733;</label>
+					<input type="radio" name="rating" id="star1" data-value="1" />
+					<label for="star1" class="star">&#9733;</label>
+				</div>
+				<button type="submit" id="submitReview" class="submit-btn">
+					<span>Submit</span>
+				</button>
+			</div>
 
-    <h2 class="h2-review-text">Reviews</h2>
-    <div id="reviewsList"></div>
-  </div>
+			<h2 class="h2-review-text">Reviews</h2>
+			<div id="reviewsSummary" style="margin-bottom: 20px; font-size: 18px">
+				<strong>Total Reviews:</strong> <span id="totalReviews">0</span>
+				&nbsp;|&nbsp;
+				<strong>Average Rating:</strong> <span id="averageRating">0.0</span> ⭐
+			</div>
 
-  <!-- Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-  <script src="reviews/reviews.js"></script>
-</body>
+			<div id="reviewsList"></div>
+		</div>
+
+		<!-- Firebase -->
+		<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+		<script src="reviews/reviews.js"></script>
+	</body>
 </html>

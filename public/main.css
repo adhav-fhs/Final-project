@@ -319,3 +319,32 @@ body {
 	white-space: pre-wrap;
 	line-height: 1.5;
 }
+
+.home-review-card {
+  margin-top: 20px;
+  padding: 14px;
+  border: 1px solid #d4af37;
+  border-radius: 10px;
+  background-color: #111c30;
+  max-width: 420px;
+  cursor: pointer;
+}
+
+.home-review-email {
+  font-size: 14px;
+  color: #f5e6c8;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.home-review-text {
+  font-size: 15px;
+  color: #d6c28f;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.home-review-stars {
+  font-size: 18px;
+  color: #d4af37;
+}
