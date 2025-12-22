@@ -119,3 +119,5 @@ addDishBtn.addEventListener("click", async () => {
   dishDescInput.value = "";
 });
 ``
+
+console.log("Dishes JS loaded");
