@@ -40,27 +40,34 @@ body {
 }
 
 .navbtn {
-	padding: 15px 30px;
-	margin: 10px 20px;
-	background-color: black;
-	border-width: 3.2px;
-	border-color: #bd9d4b;
-	border-radius: 15px;
-	transition-duration: 2.5s;
-	font-weight: bold;
+  padding: 15px 30px;
+  margin: 10px 20px;
+  background-color: black;
+  border: 3.2px solid #bd9d4b;
+  border-radius: 15px;
+  font-weight: bold;
+  color: #bd9d4b;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1; 
 }
+
+.navbtn:hover {
+  transform: scale(1.25);
+  background-color: #bd9d4b;
+  color: black;
+  box-shadow: 0 8px 20px rgba(189, 157, 75, 0.6);
+  text-shadow: 1.5px 1.5px 2.5px #000;
+}
+
+
 
 .navbtn > a {
 	text-decoration: none;
 	color: #bd9d4b;
 	font-size: 15px;
 	font-weight: bold;
-}
-
-.navbtn:hover {
-	padding: 30px 60px;
-	border-width: 5px;
-	transition-duration: 1s;
 }
 
 .bg-image-container {
@@ -131,17 +138,25 @@ body {
 }
 
 .page-btn {
-	display: inline-block;
-	padding: 15px 30px;
-	margin: 10px 20px 30px 0;
-	background-color: black;
-	border: 3.2px solid #bd9d4b;
-	border-radius: 15px;
-	color: #bd9d4b;
-	text-decoration: none;
-	font-size: 18px;
-	font-weight: bold;
-	transition-duration: 1.5s;
+  padding: 15px 30px;
+  margin: 10px 20px;
+  background-color: black;
+  border: 3.2px solid #bd9d4b;
+  border-radius: 15px;
+  font-weight: bold;
+  color: #bd9d4b;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.page-btn:hover {
+  transform: scale(1.1);
+  background-color: #bd9d4b;
+  color: black;
+  box-shadow: 0 8px 20px rgba(189, 157, 75, 0.6);
+  text-shadow: 1px 1px 2px #000;
 }
 
 .page-breaker1 {
@@ -203,7 +218,7 @@ body {
 
 .overlay-content3 {
 	position: absolute;
-	top: 180%;
+	top: 200%;
 	left: 0;
 	width: 100%;
 	display: flex;
@@ -215,7 +230,7 @@ body {
 }
 
 #overlay-content-img3 {
-	margin-top: 36%;
+	margin-top: 25%;
 }
 
 .left-side-page3 {
@@ -279,31 +294,31 @@ body {
 }
 
 .social-btn {
-	color: #d8b86a;
-	width: 44px;
-	height: 44px;
-	border-radius: 50%;
-	border: 2px solid #d8b86a;
-	background: #050505;
-	display: inline-grid;
-	place-items: center;
-	padding: 15px;
-	margin: 25px 20px 4px 0;
-	position: relative;
-	overflow: hidden;
-	transition-duration: 0.5s;
+  color: #d8b86a;
+  border-radius: 50%;
+  border: 2px solid #d8b86a;
+  background: #050505;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  margin: 25px 20px 4px 0;
+	text-decoration: none;
 }
 
 .social-btn:hover {
-	padding: 25px;
-	transition-duration: 0.5s;
+  transform: scale(1.25);
 }
 
 .social-img {
-	width: 100%;
-	height: 100%;
-	object-fit: fill;
-	border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .map-embed {
@@ -360,7 +375,7 @@ body {
 
 #reviews-desc {
 	font-size: 20px;
-	max-width: 800px;
+  width: 100%;
 	margin-bottom: 30px;
 	background-color: rgba(10, 10, 10, 0.8);
 	color: rgb(189, 157, 75, 0.6);
