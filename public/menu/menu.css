@@ -9,6 +9,7 @@ body {
 head {
   overflow-x: hidden;
 }
+
 .navbar {
 	position: sticky;
 	top: 0;
@@ -18,7 +19,90 @@ head {
 	border-bottom-style: solid;
 	border-color: #bd9d4b;
 	text-align: center;
+	position: relative; 
 }
+
+.brand {
+	color: #bd9d4b;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.cart-container {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.cart-btn {
+	background: none;
+	border: none;
+	cursor: pointer;
+	position: relative;
+}
+
+.cart-icon {
+	width: 30px;
+	height: 30px;
+}
+
+.cart-count {
+	position: absolute;
+	top: -6px;
+	right: -6px;
+	background: #bd9d4b;
+	color: black;
+	font-size: 12px;
+	padding: 2px 6px;
+	border-radius: 50%;
+}
+
+.home-container {
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.home-btn {
+	position: relative;
+	display: inline-block;
+	background-color: black;
+	color: #bd9d4b;
+	border: 1px solid #bd9d4b;
+	padding: 10px 20px;
+	text-decoration: none;
+	overflow: hidden;
+	border-radius: 5px;
+	transition: color 0.4s, background-color 0.4s;
+}
+
+.home-btn::before {
+	content: "";
+	position: absolute;
+	top: -100%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #bd9d4b;
+	transition: top 0.4s;
+}
+
+.home-btn:hover::before {
+	top: 0;
+	z-index: 1;
+}
+
+.home-btn:hover {
+	color: black;
+}
+
+.home-btn span {
+	position: relative;
+	z-index: 5;
+}
+
 
 .brand {
 	font-weight: bold;
