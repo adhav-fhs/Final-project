@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: "Georgia", serif;
@@ -142,7 +141,6 @@ body {
   color: #000;
 }
 
-
 .addDishBtn span {
   position: relative;
   z-index: 2;
@@ -158,9 +156,17 @@ body {
   padding: 16px;
   margin-bottom: 15px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   border: 1px solid #d4af37;
+  gap: 20px;
+}
+
+.dish-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
 }
 
 .dish-info h3 {
@@ -173,94 +179,59 @@ body {
   color: #d6c28f;
 }
 
-/* ---------- VOTE BUTTON (SLIDE EFFECT) ---------- */
-.vote-btn {
-  position: relative;
-  overflow: hidden;
-  background-color: #000;
-  color: #d4af37;
-  border: 1px solid #d4af37;
-  padding: 10px 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.vote-btn::before {
-  content: "";
-  position: absolute;
-  top: -100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #d4af37;
-  transition: top 0.35s ease;
-}
-
-.vote-btn:hover::before {
-  top: 0;
-}
-
-.vote-btn:hover {
-  color: #000;
-}
-
-.vote-btn,
-.vote-btn span {
-  position: relative;
-  z-index: 2;
+.rating-summary {
+  margin: 0;
+  font-size: 16px;
+  color: #d6c28f;
+  align-self: flex-start;
 }
 
 .stars {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: flex-start;
-	gap: 8px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
 }
 
 .stars input {
-	display: none;
+  display: none;
 }
 
 .stars .star {
-	font-size: 24px;
-	color: gray;
-	cursor: pointer;
-	transition: transform 0.25s ease, color 0.25s;
+  font-size: 24px;
+  color: gray;
+  cursor: pointer;
+  transition: transform 0.25s ease, color 0.25s;
 }
 
 .stars .star:hover,
 .stars .star:hover ~ .star {
-	color: #d4af37;
+  color: #d4af37;
 }
 
 .stars .star:hover {
-	transform: scale(1.9);
+  transform: scale(1.9);
 }
 
 .stars .star:hover ~ .star {
-	transform: scale(1.6);
+  transform: scale(1.6);
 }
 
 .stars .star:hover ~ .star ~ .star {
-	transform: scale(1.35);
+  transform: scale(1.35);
 }
 
 .stars .star:hover ~ .star ~ .star ~ .star {
-	transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 .stars .star:hover ~ .star ~ .star ~ .star ~ .star {
-	transform: scale(1);
+  transform: scale(1);
 }
 
 .stars input:checked + .star,
 .stars input:checked + .star ~ .star {
-	color: #d4af37;
-}
-
-.rating-summary {
-	margin-left: 16px;
-	font-size: 16px;
-	color: #d6c28f;
+  color: #d4af37;
 }
