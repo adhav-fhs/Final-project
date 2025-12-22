@@ -1,21 +1,30 @@
 // ---------- FIREBASE CONFIG ----------
 const firebaseConfig = {
-  // 🔴 REPLACE WITH YOUR REAL CONFIG
   apiKey: "AIzaSyDL1SFXlYH_WwXYNXu6Q74LXGacEztnacs",
   authDomain: "bites-of-india-8fa73.firebaseapp.com",
   projectId: "bites-of-india-8fa73",
+  storageBucket: "bites-of-india-8fa73.appspot.com",
+  messagingSenderId: "237371321420",
+  appId: "1:237371321420:web:acee71337ade380bcbd8e9",
+  measurementId: "G-CCDHW22L1B"
 };
 
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
+const auth = firebase.auth();
 
-// ---------- USER ID (ONE RATING PER USER) ----------
-let userId = localStorage.getItem("bitesUserId");
+// ---------- ANONYMOUS AUTHENTICATION ----------
+let userId;
 
-if (!userId) {
-  userId = "user_" + Math.random().toString(36).slice(2);
-  localStorage.setItem("bitesUserId", userId);
-}
+auth.signInAnonymously()
+  .then((userCredential) => {
+    userId = userCredential.user.uid;
+    console.log("Signed in anonymously with UID:", userId);
+    initApp();
+  })
+  .catch((error) => {
+    console.error("Auth error:", error);
+  });
 
 // ---------- DOM ----------
 const dishList = document.getElementById("dishList");
@@ -27,7 +36,6 @@ const dishDescInput = document.getElementById("dishDesc");
 function calculateAverage(ratings = {}) {
   const values = Object.values(ratings);
   if (values.length === 0) return "No ratings";
-
   const sum = values.reduce((a, b) => a + b, 0);
   return (sum / values.length).toFixed(1);
 }
@@ -87,9 +95,13 @@ function renderDish(doc) {
     input.addEventListener("change", async () => {
       const value = Number(input.value);
 
-      await db.collection("recipes").doc(doc.id).update({
-        [`ratings.${userId}`]: value
-      });
+      try {
+        await db.collection("recipes").doc(doc.id).update({
+          [`ratings.${userId}`]: value
+        });
+      } catch (err) {
+        console.error("Error updating rating:", err);
+      }
     });
   });
 
@@ -97,27 +109,32 @@ function renderDish(doc) {
 }
 
 // ---------- REAL-TIME LISTENER ----------
-db.collection("recipes").onSnapshot((snapshot) => {
-  dishList.innerHTML = "";
-  snapshot.forEach(renderDish);
-});
+function initApp() {
+  db.collection("recipes")
+    .orderBy(firebase.firestore.FieldPath.documentId())
+    .onSnapshot((snapshot) => {
+      dishList.innerHTML = "";
+      snapshot.forEach(renderDish);
+    });
 
-// ---------- ADD DISH ----------
-addDishBtn.addEventListener("click", async () => {
-  const name = dishNameInput.value.trim();
-  const desc = dishDescInput.value.trim();
+  // ---------- ADD DISH ----------
+  addDishBtn.addEventListener("click", async () => {
+    const name = dishNameInput.value.trim();
+    const desc = dishDescInput.value.trim();
 
-  if (!name || !desc) return;
+    if (!name || !desc) return;
 
-  await db.collection("recipes").add({
-    "recipe-name": name,
-    "recipe-description": desc,
-    ratings: {}
+    try {
+      await db.collection("recipes").add({
+        "recipe-name": name,
+        "recipe-description": desc,
+        ratings: {}
+      });
+
+      dishNameInput.value = "";
+      dishDescInput.value = "";
+    } catch (err) {
+      console.error("Error adding dish:", err);
+    }
   });
-
-  dishNameInput.value = "";
-  dishDescInput.value = "";
-});
-``
-
-console.log("Dishes JS loaded");
+}
