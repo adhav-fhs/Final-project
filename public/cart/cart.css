@@ -1,0 +1,148 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	margin: 0;
+	background: linear-gradient(135deg, #0f172a, #1e293b);
+	color: #bd9d4b;
+}
+
+.navbar {
+	background: black;
+	padding: 14px 24px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0 0 20px rgba(250, 204, 21, 0.4);
+}
+
+.brand {
+	font-size: 20px;
+	font-weight: bold;
+	color: #bd9d4b;
+}
+
+.navbar .nav-btn:first-child {
+	margin-left: 50px;
+}
+
+.navbar .nav-btn:last-child {
+	margin-right: 50px;
+}
+
+.nav-btn {
+	position: relative;
+	overflow: hidden;
+	background: black;
+	color: #bd9d4b;
+	border: 1px solid #bd9d4b;
+	padding: 8px 18px;
+	border-radius: 8px;
+	transition: color 0.35s ease;
+	z-index: 1;
+  text-decoration: none;
+}
+
+.nav-btn::before {
+	content: "";
+	position: absolute;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #bd9d4b;
+	transition: top 0.35s ease;
+	z-index: -1;
+}
+
+.nav-btn:hover::before {
+	top: 0;
+}
+
+.nav-btn:hover {
+	color: black;
+	box-shadow: 0 0 12px rgba(189, 157, 75, 0.8);
+	transform: translateY(-2px);
+}
+
+.cart-container {
+	max-width: 900px;
+	margin: 40px auto;
+	padding: 20px;
+}
+
+.cart-item {
+	background: rgba(0, 0, 0, 0.65);
+	border-radius: 14px;
+	padding: 16px 20px;
+	margin-bottom: 18px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 0 15px rgba(250, 204, 21, 0.25);
+}
+
+.item-info {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.item-name {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.item-price {
+	font-size: 14px;
+	color: #bd9d4b;
+}
+
+.item-right {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.cart-controls {
+	display: flex;
+	gap: 8px;
+}
+
+.ctrl-btn {
+	width: 30px;
+	height: 30px;
+	border-radius: 6px;
+	border: 1px solid #bd9d4b;
+	background: black;
+	color: #bd9d4b;
+	font-size: 14px;
+	cursor: pointer;
+	transition: all 0.25s ease;
+}
+
+.ctrl-btn:hover {
+	background: #bd9d4b;
+  color: black;
+	transform: translateY(-3px);
+	box-shadow: 0 0 10px bd9d4b;
+}
+
+.item-total {
+	font-weight: bold;
+	font-size: 16px;
+	min-width: 80px;
+	text-align: right;
+}
+
+.cart-total {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 22px;
+	font-weight: bold;
+	padding-top: 20px;
+	border-top: 1px solid bd9d4b;
+}
