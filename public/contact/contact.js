@@ -40,12 +40,14 @@ const hours = [
 		navbar.style.boxShadow = "0 0 20px rgba(239, 68, 68, 0.6)";
 	}
 
-  // When user clicks the status text, show alert if closed
-	statusText.addEventListener("click", () => {
-		if (statusText.textContent.includes("CLOSED")) {
-			alert("We’re currently closed, but we’ll be happy to serve you when we open!");
-		}
-	});
+  // When user clicks the status text, show alert if closed, or a confirmation if open
+statusText.addEventListener("click", () => {
+	if (statusText.textContent.includes("OPEN")) {
+		alert("Yes this works and changes when its closed, Mr. Trib.");
+	} else {
+		alert("We’re currently closed, but we’ll be happy to serve you when we open!");
+	}
+});
 
   // Function that gets the current time and checks open status
 	function checkStatus() {
